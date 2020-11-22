@@ -4181,8 +4181,7 @@ FAIL:
 }
 
 extern "C" {
-    OOZ_DLL_PUBLIC int Ooz_Decompress(uint8_t const* src_buf, int src_len, uint8_t* dst, size_t dst_size,
-        int, int, int, uint8_t*, size_t, void*, void*, void*, size_t, int) {
+    OOZ_DLL_PUBLIC int Ooz_Decompress(uint8_t const* src_buf, int src_len, uint8_t* dst, size_t dst_size) {
         return Kraken_Decompress(src_buf, src_len, dst, dst_size);
     }
 }
